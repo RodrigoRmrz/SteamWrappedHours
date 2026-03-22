@@ -1,6 +1,6 @@
-# Steam Wrapped Hours
+# All Steam Time
 
-Landing y MVP construidos con `Next.js 16`, `React 19`, `TypeScript` y `Tailwind CSS 4` para calcular las horas totales acumuladas en una biblioteca de Steam.
+Landing y MVP construidos con `Next.js 16`, `React 19`, `TypeScript` y `Tailwind CSS 4` para sumar las horas de juego totales de toda una biblioteca publica de Steam.
 
 ## Que hace
 

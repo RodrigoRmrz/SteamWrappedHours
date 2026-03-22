@@ -260,7 +260,7 @@ export function SteamLookupExperience() {
             calcula tu total
           </p>
           <h2 className="mt-3 text-2xl font-semibold text-white sm:text-3xl">
-            Descubre cuanto tiempo real vive en tu cuenta.
+            Pega tu Steam y mira el total real.
           </h2>
         </div>
       </div>
@@ -271,14 +271,14 @@ export function SteamLookupExperience() {
         <span className="font-mono text-[var(--color-accent)]">
           playtime_forever
         </span>{" "}
-        de todos los productos devueltos por Steam. Si Steam expone una demo o
-        una beta con horas, tambien entra en el calculo.
+        de todos los productos devueltos por Steam. Si aparece una demo, beta u
+        otro extra con horas, tambien entra en el calculo.
       </p>
 
       <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
         <label className="block">
           <span className="mb-3 block font-mono text-[11px] uppercase tracking-[0.28em] text-[var(--color-accent)]/80">
-            steam input
+            perfil de steam
           </span>
           <input
             value={steamInput}
@@ -309,7 +309,7 @@ export function SteamLookupExperience() {
         >
           {requestState.loading
             ? "Consultando Steam..."
-            : "Calcular horas totales"}
+            : "Calcular total"}
         </button>
       </form>
 
@@ -363,12 +363,12 @@ export function SteamLookupExperience() {
               <MetricCard
                 eyebrow="dias equivalentes"
                 value={`${formatDays(successResponse.totals.totalDays)}d`}
-                detail="Tiempo convertido a dias continuos frente al monitor."
+                detail="Horas convertidas a dias seguidos de uso."
               />
               <MetricCard
                 eyebrow="productos contados"
                 value={formatNumber(successResponse.totals.productCount)}
-                detail="Total de apps visibles devueltas por Steam para ese perfil."
+                detail="Todo lo que Steam devuelve para ese perfil visible."
               />
             </div>
 
@@ -379,7 +379,7 @@ export function SteamLookupExperience() {
                     top playtime
                   </p>
                   <p className="mt-2 text-lg font-semibold text-white">
-                    Los productos con mas peso en el total.
+                    Los productos que mas empujan el total.
                   </p>
                 </div>
                 <p className="text-xs text-[var(--color-muted)]">
@@ -407,9 +407,8 @@ export function SteamLookupExperience() {
           </div>
         ) : (
           <div className="mt-5 rounded-[1.8rem] border border-dashed border-white/12 bg-white/[0.02] p-6 text-sm text-[var(--color-muted)]">
-            Aqui aparecera tu total de horas, su equivalencia en dias y el
-            ranking de productos con mas peso en tu cuenta cuando envies una
-            consulta valida.
+            Aqui aparecera tu total de horas, su equivalencia en dias y el top
+            de productos cuando envies una consulta valida.
           </div>
         )}
       </div>

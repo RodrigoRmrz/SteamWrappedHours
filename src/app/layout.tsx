@@ -14,10 +14,10 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Steam Wrapped Hours",
+  title: "All Steam Time",
   description:
-    "Descubre el tiempo total invertido en tu biblioteca de Steam con una landing moderna creada con Next.js.",
-  applicationName: "Steam Wrapped Hours",
+    "Pega tu perfil, SteamID64 o vanity URL y calcula el total acumulado de horas en tu biblioteca publica de Steam.",
+  applicationName: "All Steam Time",
   keywords: [
     "Steam",
     "Next.js",
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
     "gaming stats",
   ],
   openGraph: {
-    title: "Steam Wrapped Hours",
+    title: "All Steam Time",
     description:
-      "Pega tu perfil de Steam y calcula las horas totales acumuladas en toda tu biblioteca.",
+      "Calcula las horas totales acumuladas en tu biblioteca publica de Steam, incluyendo demos y betas cuando Steam las expone.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Steam Wrapped Hours",
+    title: "All Steam Time",
     description:
-      "Tu Steam en una sola cifra: horas totales, top juegos y estadisticas de tu biblioteca.",
+      "Tu biblioteca publica de Steam en una sola cifra clara y un top de playtime.",
   },
 };
 
